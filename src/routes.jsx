@@ -4,6 +4,7 @@
 import Home from "./components/Home";
 import Post from "./components/Post";
 import Posts from "./components/Posts";
+import NewPost from "./components/NewPost";
 import LogIn from "./components/LogIn";
 import ErrorPage from "./components/ErrorPage";
 
@@ -21,6 +22,11 @@ const routes = [
   {
     path: "posts/:postId",
     element: <Post />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: "newPost",
+    element: <NewPost />,
     errorElement: <ErrorPage />
   },
   {
