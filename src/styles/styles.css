@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: midnightblue;
+    color: white;
+}
+
+h1, h2 {
+    margin: 20px;
+}
+
+h3 {
+    margin: 0px;
+    padding: none;
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: hotpink;
+    color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    gap: 10px;
+    height: 150px;
+}
+
+.commentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: greenyellow;
+    color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    padding-left: 30px;
+    gap: 5px;
+    height: 75px;
+}
