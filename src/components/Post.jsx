@@ -65,7 +65,7 @@ function Post() {
     {comments && comments.map(comment => {
 
       return (
-      <CommentDiv key={comment.id} comment={comment}></CommentDiv>
+      <CommentDiv key={comment.id} comment={comment} handleClick={() => setRemount(!remount)}></CommentDiv>
       )
 
     })}
