@@ -22,17 +22,6 @@ async function fetchToken(username, password, navigate) {
 
     console.log('Bearer '+localStorage.getItem('token'));
 
-    // const response2 = await fetch("https://blog-api-iv3t.onrender.com/protected", {
-    //     method: "GET",
-    //     headers: {'authorization': 'Bearer '+localStorage.getItem('token'),
-    //     'Accept': 'application/json'
-    //     },
-    // });
-
-    // const data2 = await response2.json();
-
-    // console.log(data2);
-
     navigate(`/posts`);
     
 };
@@ -45,7 +34,7 @@ function LogIn() {
 
     return(
 
-    <div>
+    <div className="formContainer">
 
             <label>
                 Username: {' '}

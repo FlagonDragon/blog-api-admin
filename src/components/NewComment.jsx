@@ -43,7 +43,7 @@ function NewComment({ postId, handleClick }) {
 
   return(
 
-  <div className="NewCommentContainer"> 
+  <div className="newCommentContainer"> 
 
     <div>Make a comment: </div>
 
@@ -55,13 +55,15 @@ function NewComment({ postId, handleClick }) {
         onChange={(e) => setValue(e.target.value)}
       />
 
-      <button
-        type='submit'
-        onClick={() => {
-          postComment(value, postId, handleClick, navigate)
-          setValue("")
-        }}
-      >Submit</button>
+      <div>
+        <button
+          type='submit'
+          onClick={() => {
+            postComment(value, postId, handleClick, navigate)
+            setValue("")
+          }}
+        >Submit</button>
+      </div>
 
     </form>
       
